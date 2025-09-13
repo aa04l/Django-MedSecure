@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medcrypto"
+version = "0.1.0"
+description = "Advanced medical data encryption utilities with Django ORM fields (HIPAA-friendly)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Dr. Abbas", email = "" }
+]
+keywords = ["encryption", "django", "hipaa", "security", "medical", "privacy"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Framework :: Django",
+  "Topic :: Security :: Cryptography",
+]
+dependencies = [
+  "cryptography>=42.0.0",
+  "Django>=3.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/aa04l/Django-MedSecure"
+Repository = "https://github.com/aa04l/Django-MedSecure"
+Issues = "https://github.com/aa04l/Django-MedSecure/issues"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+  "build>=1.2.1",
+  "twine>=5.1.1",
+  "ruff>=0.5.0",
+  "black>=24.0.0",
+  "mypy>=1.8.0",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["medcrypto*"]
