@@ -1,6 +1,6 @@
 # MedCrypto
 
-[![CI](https://github.com/aa04l/Django-MedSecure/actions/workflows/python-package.yml/badge.svg)](https://github.com/aa04l/Django-MedSecure/actions/workflows/python-package.yml)
+
 
 Repository: https://github.com/aa04l/Django-MedSecure
 
